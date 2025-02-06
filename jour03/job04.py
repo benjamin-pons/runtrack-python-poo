@@ -1,6 +1,5 @@
 class Joueur:
     def __init__(self, nom, numero, position):
-        # Attributs du joueur
         self.__nom = nom
         self.__numero = numero
         self.__position = position
@@ -53,15 +52,14 @@ class Joueur:
 
 class Equipe:
     def __init__(self, nom):
-        # Attributs de l'équipe
         self.__nom = nom
-        self.__joueurs = []  # Liste de joueurs
+        self.__joueurs = [] 
 
-    # Méthode pour ajouter un joueur à l'équipe
+
     def ajouterJoueur(self, joueur):
         self.__joueurs.append(joueur)
 
-    # Méthode pour afficher les statistiques de tous les joueurs
+
     def afficherStatistiquesJoueurs(self):
         print(f"Statistiques de l'équipe {self.__nom}:")
         for joueur in self.__joueurs:
